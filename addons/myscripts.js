@@ -1,1 +1,2 @@
-console.log(document.querySelector("#main"));
+console.dir(document.querySelector("#main"));
+console.warn("Fatal error!!");
