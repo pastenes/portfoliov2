@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" type="image/png" href="addons/favicon.png">
+<link rel="shortcut icon" type="image/png" href="addons/favicon.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Richard Pastenes Web Portfolio</title>
+<link href="addons/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Advent+Pro:100' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="addons/jquery.cycle.lite.js"></script>
+<!--<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' //  transition type: fade, scrollUp, shuffle.
+	});
+});
+</script>
+
+
+<!--<script type="text/javascript" src="addons/jquery.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+                $(".contactLink").click(function(){
+                    if ($("#contactForm").is(":hidden")){
+                        $("#contactForm").slideDown("slow");
+                    }
+                    else{
+                        $("#contactForm").slideUp("slow");
+                    }
+                });
+            });
+            function closeForm(){
+                $("#messageSent").show("slow");
+                setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
+           }
+
+$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           var d = document.createElement("div");
+        d.style.height = "101%";
+        d.style.overflow = "hidden";
+        document.body.appendChild(d);
+        window.scrollTo(0,scrollToM);
+        setTimeout(function() {
+        d.parentNode.removeChild(d);
+            }, 10);
+           return false;
+         });
+      }
+    }
+  });
+});
+
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-25660391-2', 'pastenes.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+	
+<a id="top"></a>&nbsp;
+<div id="main">
+    <div id=title>
+        <h1><a href="http://richard.pastenes.com/">Richard Pastenes</a></h1><br />
+        <h2>Web Design Portfolo</h2>
+    </div>
+<div id="nav">         
+    <table width="100%" border="0" cellpadding="5" summary="">
+    
+      <tr class="top-table">
+        <td class="top-cell"><a href="#web1"><img src="images/pastenes_screen_300x244.png" width="200" height="163" alt="Pastenes Photography" /></a></td>
+        <td class="top-cell"><a href="#web2"><img src="images/gresham_200x163.png" width="200" height="163" alt="Gresham Memorial" /></a></td>
+        <td class="top-cell"><a href="#web3"><img src="images/cabinet_vision_200x163.png" width="200" height="163" alt="Barbara and Richard" /></a></td>
+      </tr>
+      <tr class="top-table">
+        <td class="top-cell"><a href="#web4"><img src="images/weiss_200x163.png" width="200" height="163" alt="Weiss and Associates" /></a></td>
+        <td class="top-cell"><a href="#web5"><img src="images/school_photoshop_200x163.png" width="200" height="163" alt="Photoshop for the Web Class" /></a></td>
+        <td class="top-cell"><a href="#web6"><img src="images/zen_pets_200x163.png" width="200" height="163" alt="SEO Calss Project" /></a></td>
+      </tr>
+    </table>  
+</div>
+
+<!--<div id="content">-->
+    <div class="ext-box">
+        <a id="web1"></a>
+            <div class="page">
+              
+                <table width="90%" border="0" cellpadding="10">
+              <tr>
+                <td>
+                    <div class="slideshow"> 
+                    	<a href="http://pastenes.com/" target="_blank"><img src="images/pastenes_01_400x326.png" width="400" height="326" /></a>
+                        <a href="http://pastenes.com/" target="_blank"><img src="images/pastenes_02_400x326.png" width="400" height="326" /></a>
+                        <a href="http://pastenes.com/" target="_blank"><img src="images/pastenes_03_400x326.png" width="400" height="326" /></a>
+                    </div>
+                </td>
+                <td>
+               	  <div class="description">
+                    <h2><a href="http://pastenes.com/" target="_blank">Pastenes Photography</a></h2>
+                    <p>Modern website implemented using CMS WordPress that showcases photography through a full screen slideshow background, gallery functionality with lightbox effect and portfolio functionalities.</p>
+                    <p>The site also includes a blog, social media capabilities and SEO plugin.</p>
+                    <br />
+                    </div>
+                    
+                </td>
+                <td>
+              
+                    <a href="#top"><img src="images/top_54x60.png" width="54" height="60" /></a><br />
+                    <a href="#web2"><img src="images/arrow_down_54x60.png" width="54" height="60" /></a><br />
+                </td>
+              </tr>
+            </table>
+            </div>
+    </div>
+    
+    <div class="ext-box">
+        <a id="web2"></a>
+            <div class="page">
+              
+                <table width="90%" border="0" cellpadding="10">
+              <tr>
+                  <td>
+                    <div class="description">
+                    <h2><a href="http://greshamfuneral.com/" target="_blank">Gresham Memorial Chapel</a></h2>
+                    <p>Custom WordPRess site built 100% from scratch, hand coded search fuctions and filters, and dynamic home page widget that only shows furure events with conditional field display.</p>
+                    <p>The site uses custome WordPress fields, WordPress advanced php posts queries and fuctions.</p>
+                    <br />
+                    </div>
+                    
+                </td>
+                <td>
+                    <div class="slideshow"> 
+                    	<a href="http://greshamfuneral.com/" target="_blank"><img src="images/gresham_01_400x326.png" width="400" height="326" /></a>
+                        <a href="http://greshamfuneral.com/" target="_blank"><img src="images/gresham_02_400x326.png" width="400" height="326" /></a>
+                        <a href="http://greshamfuneral.com/" target="_blank"><img src="images/gresham_03_400x326.png" width="400" height="326" /></a>
+                    </div>
+                </td>
+            
+                <td>
+                    <a href="#web1"><img src="images/arrow_up_54x60.png" width="54" height="60" /></a><br />
+                    <a href="#top"><img src="images/top_54x60.png" width="54" height="60" /></a><br />
+                    <a href="#web3"><img src="images/arrow_down_54x60.png" width="54" height="60" /></a><br />
+                </td>
+              </tr>
+            </table>
+            </div>
+    </div>
+    
+    
+    
+    <div class="ext-box">
+        <a id="web3"></a>
+            <div class="page">
+              
+                <table width="90%" border="0" cellpadding="10">
+              <tr>
+                  <td>
+                    <div class="description">
+                    <h2><a href="http://www.cabinetvisionllc.com/" target="_blank">Cabinet Vision LLC</a></h2>
+                    <p>Business and gallery site for a furniture manufacturer.  The site includes a dynamic portfolio/gallery, blog and social media functionality and a contact form with map included.</p>
+                    <p>The photography of the main page was also done by me.</p>
+                    <br />
+                    </div>
+                </td>
+                <td>
+                    <div class="slideshow"> 
+                    	<a href="http://www.cabinetvisionllc.com/" target="_blank"><img src="images/cabinet_01_400x326.png" width="400" height="326" /></a>
+                        <a href="http://www.cabinetvisionllc.com/" target="_blank"><img src="images/cabinet_02_400x326.png" width="400" height="326" /></a>
+                        <a href="http://www.cabinetvisionllc.com/" target="_blank"><img src="images/cabinet_03_400x326.png" width="400" height="326" /></a>
+                    </div>
+                </td>
+            
+                <td>
+                    <a href="#web2"><img src="images/arrow_up_54x60.png" width="54" height="60" /></a><br />
+                    <a href="#top"><img src="images/top_54x60.png" width="54" height="60" /></a><br />
+                    <a href="#web4"><img src="images/arrow_down_54x60.png" width="54" height="60" /></a><br />
+                </td>
+              </tr>
+            </table>
+            </div>
+    </div>
+    
+    <div class="ext-box">
+        <a id="web4"></a>
+            <div class="page">
+              
+                <table width="90%" border="0" cellpadding="10">
+                  <tr>
+                    <td>
+                        <div class="slideshow"> 
+                        	<a href="http://http://weisandassociates.com/" target="_blank"><img src="images/weiss_01_400x326.png" width="400" height="326" /></a>
+                            <a href="http://http://weisandassociates.com/" target="_blank"><img src="images/weiss_02_400x326.png" width="400" height="326" /></a>
+                            <a href="http://http://weisandassociates.com/" target="_blank"><img src="images/weiss_03_400x326.png" width="400" height="326" /></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="description">
+                        <h2><a href="http://http://weisandassociates.com/" target="_blank">Health Insurance Site</a></h2>
+                        <p>WordPress theme handcoded entirely from scratch using HTML, CSS, PHP and JavaScript</p>
+                        <p>The designer provided a PSD file from which I extracted all the graphic elements to properly display them using CSS and JavaScript.</p>
+                        <br />
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#web3"><img src="images/arrow_up_54x60.png" width="54" height="60" /></a><br />
+                        <a href="#top"><img src="images/top_54x60.png" width="54" height="60" /></a><br />
+                        <a href="#web5"><img src="images/arrow_down_54x60.png" width="54" height="60" /></a><br />
+                    </td>
+                  </tr>
+            	</table>
+            </div>
+    </div>
+    
+    
+    <div class="ext-box">
+        <a id="web5"></a>
+            <div class="page">
+              
+                <table width="90%" border="0" cellpadding="10">
+                  <tr>
+                    <td>
+                        <div class="slideshow"> 
+                        	<a href="http://web.pastenes.com/psforweb/index.html" target="_blank"><img src="images/school_photoshop_01_400x326.png" width="400" height="326" /></a>
+                            <a href="http://web.pastenes.com/psforweb/index.html" target="_blank"><img src="images/school_photoshop_02_400x326.png" width="400" height="326" /></a>
+                            <a href="http://web.pastenes.com/psforweb/index.html" target="_blank"><img src="images/school_photoshop_03_400x326.png" width="400" height="326" /></a>
+                        </div>
+                    </td>
+                    <td>
+                    	<div class="description">
+                        <h2><a href="http://web.pastenes.com/psforweb/" target="_blank">Photoshop For The Web School Final Project</a></h2>
+                        <p>This is my final project for the Photoshop for the Web class.  The site is a TOC of all of the projects done during this class.</p>
+                        <p>The projects consisted on applying filters and adjustments to images, image selection and manipulation and more.</p>
+                        <br />
+                        </div>
+                    </td>
+                    <td>
+                        <a href="#web4"><img src="images/arrow_up_54x60.png" width="54" height="60" /></a><br />
+                        <a href="#top"><img src="images/top_54x60.png" width="54" height="60" /></a><br />
+                        <a href="#web6"><img src="images/arrow_down_54x60.png" width="54" height="60" /></a><br />
+                    </td>
+                  </tr>
+                </table>
+            </div>
+    </div>
+    
+    <div class="ext-box">
+        <a id="web6"></a>
+            <div class="page">
+              
+				<table width="90%" border="0" cellpadding="10">
+                  <tr>
+                      <td>
+                      	<div class="description">
+                        <h2><a href="http://web.pastenes.com/zenpets/index.html" target="_blank">ZenPets School SEO Final Project</a></h2>
+                        <p>This is the final project for the SEO class.  The site was designed by <a href="https://plus.google.com/u/0/105493841981922469423/posts" target="_blank">&nbsp;Lacey Cox </a>&nbsp; in Photoshop and developed by me using HTML and CSS.</p>
+                        <p>The site is SEO optimized in the content and the code.</p>
+                        <br />
+                        </div>                        
+                    </td>
+                    <td>
+                        <div class="slideshow"> 
+                        	<a href="http://web.pastenes.com/zenpets/index.html" target="_blank"><img src="images/zen_pets_01_400x326.png" width="400" height="326" /></a>
+                            <a href="http://web.pastenes.com/zenpets/index.html" target="_blank"><img src="images/zen_pets_02_400x326.png" width="400" height="326" /></a>
+                            <a href="http://web.pastenes.com/zenpets/index.html" target="_blank"><img src="images/zen_pets_03_400x326.png" width="400" height="326" /></a>
+                        </div>
+                    </td>
+                
+                    <td>
+                        <a href="#web5"><img src="images/arrow_up_54x60.png" width="54" height="60" /></a><br />
+                        <a href="#top"><img src="images/top_54x60.png" width="54" height="60" /></a><br />
+                    </td>
+                  </tr>
+                </table>
+            </div>
+    </div>
+
+
+<div id="footer"><a href="http://richard.pastenes.com/">&copy;2013 Richard Pastenes</a></div>
+<!--End of main div-->
+</div>
+<!--End of content div-->
+<!--</div>-->
+</body>
+</html>
